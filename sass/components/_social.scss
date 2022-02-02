@@ -26,6 +26,11 @@
   }
 }
 
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: var(--primery-bgr-color);
+}
+
 .social__link--inverse {
   background: rgba(255, 255, 255, 0.1);
 }
