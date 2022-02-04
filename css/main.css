@@ -167,10 +167,6 @@ body {
   background-color: var(--primery-btn-hover);
 }
 
-.modal-form__hero__btn {
-  transform: translateX(60%);
-}
-
 .hero__btn-icon {
   margin-left: 10px;
 }
@@ -246,17 +242,35 @@ body {
 
 .modal {
   padding: 40px;
-  width: 528px;
+  max-width: 450px;
   min-height: 581px;
   background-color: var(--primery-bgr-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  top: 93px;
+  left: 15px;
+  right: 15px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
   transition: transform 550ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .modal__close {
@@ -285,11 +299,21 @@ body {
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
+}
+
+.modal-form {
+  text-align: center;
 }
 
 .modal-form__field {
@@ -325,6 +349,7 @@ body {
   letter-spacing: 0.01em;
   color: var(--primery-text-color);
   margin-bottom: 4px;
+  text-align: start;
 }
 
 .modal-form__container {
@@ -365,13 +390,20 @@ body {
 }
 
 .check-wrap__text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-wrap__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check-wrap__link {
@@ -386,7 +418,13 @@ body {
   position: absolute;
   background-color: var(--btn-color);
   left: 0;
-  bottom: 5px;
+  bottom: 2px;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-wrap__link::after {
+    bottom: 5px;
+  }
 }
 
 .check-wrap {
@@ -521,7 +559,7 @@ body {
 
 .hero {
   background-color: var(--hero-footer-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero480.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -530,17 +568,35 @@ body {
   text-align: center;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob-2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero768.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab-1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab-2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1200.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk-1x.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk-2x.jpg);
   }
 }
 
@@ -637,6 +693,12 @@ body {
 
 .section--no-padding-top {
   padding-top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .section--no-padding-top {
+    display: none;
+  }
 }
 
 .specialization {
