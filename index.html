@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container page-header__container">
         <a href="./index.html" class="logo page-header__logo"
           >Web<span class="logo__dark">Studio</span></a
@@ -59,7 +59,74 @@
           </li>
         </ul>
       </div>
-    </header> -->
+
+      <div class="mob-header">
+        <a href="./index.html" class="logo"
+          >Web<span class="logo__dark">Studio</span></a
+        >
+        <button type="button" class="mob-header-btn" data-menu-open>
+          <svg width="40px" height="40px">
+            <use href="./images/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
+
+        <div class="mob-menu is-hidden" data-menu>
+          <button type="button" class="menu__close" data-menu-close>
+            <svg width="40px" height="40px">
+              <use href="./images/icons.svg#icon-modal-close-btn"></use>
+            </svg>
+          </button>
+          <div class="container mob-header__container">
+            <ul class="mob-menu__list">
+              <li class="mob-menu__item">
+                <a
+                  href="./index.html"
+                  class="mob-menu__link mob-menu__link--active"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link">Портфолио</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="auth__list">
+              <li class="auth__item">
+                <a href="tel:+380961111111" class="auth__tel">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="auth__item">
+                <a href="mailto:info@devstudio.com" class="auth__mail">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-menu__social">
+              <li class="mob-menu__social__item">
+                <a href="" class="mob-menu__social__link">Instagram</a>
+              </li>
+              <li class="mob-menu__social__item">
+                <a href="" class="mob-menu__social__link">Twitter</a>
+              </li>
+              <li class="mob-menu__social__item">
+                <a href="" class="mob-menu__social__link">Facebook</a>
+              </li>
+              <li class="mob-menu__social__item">
+                <a
+                  href=""
+                  class="mob-menu__social__link mob-menu__social__link--border-none"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main class="main">
       <section class="hero">
@@ -137,13 +204,13 @@
               <picture>
                 <source
                   srcset="
-                    ./images/specialization-1-1x.jpg 1x,
-                    ./images/specialization-1-2x.jpg 2x
+                    ./images/specialization/specialization-1-1x.jpg 1x,
+                    ./images/specialization/specialization-1-2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/specialization-1-1x.jpg"
+                  src="./images/specialization/specialization-1-1x.jpg"
                   alt="програмист набирающий код"
                 />
               </picture>
@@ -153,13 +220,13 @@
               <picture>
                 <source
                   srcset="
-                    ./images/specialization-2-1x.jpg 1x,
-                    ./images/specialization-2-2x.jpg 2x
+                    ./images/specialization/specialization-2-1x.jpg 1x,
+                    ./images/specialization/specialization-2-2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/specialization-2-1x.jpg"
+                  src="./images/specialization/specialization-2-1x.jpg"
                   alt="в руке держит телефон перед ноутбуком"
                 />
               </picture>
@@ -169,13 +236,13 @@
               <picture>
                 <source
                   srcset="
-                    ./images/specialization-3-1x.jpg 1x,
-                    ./images/specialization-3-2x.jpg 2x
+                    ./images/specialization/specialization-3-1x.jpg 1x,
+                    ./images/specialization/specialization-3-2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/specialization-3-1x.jpg"
+                  src="./images/specialization/specialization-3-1x.jpg"
                   alt="пиксельная картинка на планшете"
                 />
               </picture>
@@ -193,12 +260,27 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team-mob-1-1x.jpg 1x,
-                    ./images/team-mob-2-1x.jpg 2x
+                    ./images/team/team-mob-1-1x.jpg 1x,
+                    ./images/team/team-mob-1-2x.jpg 2x
                   "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tab-1-1x.jpg 1x,
+                    ./images/team/team-tab-1-2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-desk-1-1x.jpg 1x,
+                    ./images/team/team-desk-1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/team-mob-1-1x.jpg"
+                  src="./images/team/team-mob-1-1x.jpg"
                   alt="фото игоря демьяненко"
                 />
               </picture>
@@ -239,11 +321,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team480(2).jpg"
-                alt="фото ольги репиной"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-mob-2-1x.jpg 1x,
+                    ./images/team/team-mob-2-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tab-2-1x.jpg 1x,
+                    ./images/team/team-tab-2-2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-desk-2-1x.jpg 1x,
+                    ./images/team/team-desk-2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/team/team-mob-2-1x.jpg"
+                  alt="фото ольги репиной"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -280,11 +385,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team480(3).jpg"
-                alt="фото николая тарасова"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-mob-3-1x.jpg 1x,
+                    ./images/team/team-mob-3-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tab-3-1x.jpg 1x,
+                    ./images/team/team-tab-3-2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-desk-3-1x.jpg 1x,
+                    ./images/team/team-desk-3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/team/team-mob-3-1x.jpg"
+                  alt="фото николая тарасова"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -321,11 +449,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team480(4).jpg"
-                alt="фото михаила ермакова"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-mob-4-1x.jpg 1x,
+                    ./images/team/team-mob-4-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tab-4-1x.jpg 1x,
+                    ./images/team/team-tab-4-2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-desk-4-1x.jpg 1x,
+                    ./images/team/team-desk-4-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/team/team-mob-4-1x.jpg"
+                  alt="фото михаила ермакова"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -616,5 +767,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
