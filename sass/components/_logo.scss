@@ -6,10 +6,12 @@
   letter-spacing: 0.03em;
   color: var(--btn-color);
   display: inline-flex;
-}
-
-.page-header__logo {
-  margin-right: 93px;
+  @include tab {
+    margin-right: 88px;
+  }
+  @include desk {
+    margin-right: 93px;
+  }
 }
 
 .logo__dark {

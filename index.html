@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
-  <body>
+  <body menu-open>
     <header class="page-header">
       <div class="container page-header__container">
-        <a href="./index.html" class="logo page-header__logo"
+        <a href="./index.html" class="logo"
           >Web<span class="logo__dark">Studio</span></a
         >
         <nav class="nav">
@@ -58,12 +58,6 @@
             </a>
           </li>
         </ul>
-      </div>
-
-      <div class="mob-header">
-        <a href="./index.html" class="logo"
-          >Web<span class="logo__dark">Studio</span></a
-        >
         <button type="button" class="mob-header-btn" data-menu-open>
           <svg width="40px" height="40px">
             <use href="./images/icons.svg#icon-mob-menu"></use>
@@ -92,37 +86,38 @@
                 <a href="" class="mob-menu__link">Контакты</a>
               </li>
             </ul>
-
-            <ul class="auth__list">
-              <li class="auth__item">
-                <a href="tel:+380961111111" class="auth__tel">
-                  +38 096 111 11 11
-                </a>
-              </li>
-              <li class="auth__item">
-                <a href="mailto:info@devstudio.com" class="auth__mail">
-                  info@devstudio.com
-                </a>
-              </li>
-            </ul>
-            <ul class="mob-menu__social">
-              <li class="mob-menu__social__item">
-                <a href="" class="mob-menu__social__link">Instagram</a>
-              </li>
-              <li class="mob-menu__social__item">
-                <a href="" class="mob-menu__social__link">Twitter</a>
-              </li>
-              <li class="mob-menu__social__item">
-                <a href="" class="mob-menu__social__link">Facebook</a>
-              </li>
-              <li class="mob-menu__social__item">
-                <a
-                  href=""
-                  class="mob-menu__social__link mob-menu__social__link--border-none"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
+            <div class="mob-menu__wrap">
+              <ul class="auth__list">
+                <li class="auth__item">
+                  <a href="tel:+380961111111" class="auth__tel">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="auth__item">
+                  <a href="mailto:info@devstudio.com" class="auth__mail">
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="mob-menu__social">
+                <li class="mob-menu__social__item">
+                  <a href="" class="mob-menu__social__link">Instagram</a>
+                </li>
+                <li class="mob-menu__social__item">
+                  <a href="" class="mob-menu__social__link">Twitter</a>
+                </li>
+                <li class="mob-menu__social__item">
+                  <a href="" class="mob-menu__social__link">Facebook</a>
+                </li>
+                <li class="mob-menu__social__item">
+                  <a
+                    href=""
+                    class="mob-menu__social__link mob-menu__social__link--border-none"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
