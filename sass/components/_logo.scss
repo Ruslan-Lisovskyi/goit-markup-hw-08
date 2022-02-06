@@ -1,8 +1,8 @@
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--btn-color);
   display: inline-flex;
@@ -10,6 +10,8 @@
     margin-right: 88px;
   }
   @include desk {
+    font-size: 26px;
+    line-height: 1.19;
     margin-right: 93px;
   }
 }
@@ -20,4 +22,8 @@
 
 .logo__white {
   color: var(--primery-bgr-color);
+}
+
+.logo--no-margin-right {
+  margin: 0;
 }

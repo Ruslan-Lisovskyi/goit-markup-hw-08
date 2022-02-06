@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
-  <body menu-open>
+  <body>
     <header class="page-header">
       <div class="container page-header__container">
         <a href="./index.html" class="logo"
@@ -66,7 +66,7 @@
 
         <div class="mob-menu is-hidden" data-menu>
           <button type="button" class="menu__close" data-menu-close>
-            <svg width="40px" height="40px">
+            <svg width="30px" height="30px">
               <use href="./images/icons.svg#icon-modal-close-btn"></use>
             </svg>
           </button>
@@ -89,23 +89,19 @@
             <div class="mob-menu__wrap">
               <ul class="auth__list">
                 <li class="auth__item">
-                  <a href="tel:+380961111111" class="auth__tel">
+                  <a href="tel:+380961111111" class="auth__link">
                     +38 096 111 11 11
                   </a>
                 </li>
                 <li class="auth__item">
-                  <a href="mailto:info@devstudio.com" class="auth__mail">
+                  <a href="mailto:info@devstudio.com" class="auth__link">
                     info@devstudio.com
                   </a>
                 </li>
               </ul>
               <ul class="mob-menu__social">
                 <li class="mob-menu__social__item">
-                  <a
-                    href=""
-                    class="mob-menu__social__link mob-menu__social__link--no-padding-left"
-                    >Instagram</a
-                  >
+                  <a href="" class="mob-menu__social__link">Instagram</a>
                 </li>
                 <li class="mob-menu__social__item">
                   <a href="" class="mob-menu__social__link">Twitter</a>
@@ -114,11 +110,7 @@
                   <a href="" class="mob-menu__social__link">Facebook</a>
                 </li>
                 <li class="mob-menu__social__item">
-                  <a
-                    href=""
-                    class="mob-menu__social__link mob-menu__social__link--border-none"
-                    >LinkedIn</a
-                  >
+                  <a href="" class="mob-menu__social__link">LinkedIn</a>
                 </li>
               </ul>
             </div>
@@ -259,25 +251,26 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/team-mob-1-1x.jpg 1x,
-                    ./images/team/team-mob-1-2x.jpg 2x
+                    ./images/team/team-desk-1-1x.jpg 1x,
+                    ./images/team/team-desk-1-2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
                     ./images/team/team-tab-1-1x.jpg 1x,
                     ./images/team/team-tab-1-2x.jpg 2x
                   "
-                  media="(max-width: 1199px)"
+                  media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team/team-desk-1-1x.jpg 1x,
-                    ./images/team/team-desk-1-2x.jpg 2x
+                    ./images/team/team-mob-1-1x.jpg 1x,
+                    ./images/team/team-mob-1-2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  media="(min-width: 480px)"
                 />
+
                 <img
                   src="./images/team/team-mob-1-1x.jpg"
                   alt="фото игоря демьяненко"
@@ -323,24 +316,24 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/team-mob-2-1x.jpg 1x,
-                    ./images/team/team-mob-2-2x.jpg 2x
+                    ./images/team/team-desk-2-1x.jpg 1x,
+                    ./images/team/team-desk-2-2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
                     ./images/team/team-tab-2-1x.jpg 1x,
                     ./images/team/team-tab-2-2x.jpg 2x
                   "
-                  media="(max-width: 1199px)"
+                  media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team/team-desk-2-1x.jpg 1x,
-                    ./images/team/team-desk-2-2x.jpg 2x
+                    ./images/team/team-mob-2-1x.jpg 1x,
+                    ./images/team/team-mob-2-2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  media="(min-width: 480px)"
                 />
                 <img
                   src="./images/team/team-mob-2-1x.jpg"
@@ -387,24 +380,24 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/team-mob-3-1x.jpg 1x,
-                    ./images/team/team-mob-3-2x.jpg 2x
+                    ./images/team/team-desk-3-1x.jpg 1x,
+                    ./images/team/team-desk-3-2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
                     ./images/team/team-tab-3-1x.jpg 1x,
                     ./images/team/team-tab-3-2x.jpg 2x
                   "
-                  media="(max-width: 1199px)"
+                  media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team/team-desk-3-1x.jpg 1x,
-                    ./images/team/team-desk-3-2x.jpg 2x
+                    ./images/team/team-mob-3-1x.jpg 1x,
+                    ./images/team/team-mob-3-2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  media="(min-width: 480px)"
                 />
                 <img
                   src="./images/team/team-mob-3-1x.jpg"
@@ -451,24 +444,24 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/team-mob-4-1x.jpg 1x,
-                    ./images/team/team-mob-4-2x.jpg 2x
+                    ./images/team/team-desk-4-1x.jpg 1x,
+                    ./images/team/team-desk-4-2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
                     ./images/team/team-tab-4-1x.jpg 1x,
                     ./images/team/team-tab-4-2x.jpg 2x
                   "
-                  media="(max-width: 1199px)"
+                  media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team/team-desk-4-1x.jpg 1x,
-                    ./images/team/team-desk-4-2x.jpg 2x
+                    ./images/team/team-mob-4-1x.jpg 1x,
+                    ./images/team/team-mob-4-2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  media="(min-width: 480px)"
                 />
                 <img
                   src="./images/team/team-mob-4-1x.jpg"
@@ -569,7 +562,7 @@
     <footer class="page-footer">
       <div class="container page-footer__container">
         <div class="address-container">
-          <a href="./index.html" class="logo"
+          <a href="./index.html" class="logo logo--no-margin-right"
             >Web
             <span class="logo__white">Studio</span>
           </a>
