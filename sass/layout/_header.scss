@@ -30,6 +30,10 @@
   }
 }
 
+.mob-menu.is-hidden {
+  transform: scale(0.1);
+}
+
 .mob-menu {
   background-color: var(--primery-bgr-color);
   position: fixed;
@@ -41,7 +45,7 @@
   max-height: 796px;
   z-index: 1;
   overflow-y: scroll;
-  transition: transform 550ms;
+  transition: transform 550ms, opacity 500ms, visibility 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
