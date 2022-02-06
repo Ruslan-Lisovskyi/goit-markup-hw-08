@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
-  @media screen and (min-width: 1200px) {
+  @include desk {
     flex-wrap: nowrap;
   }
 }
@@ -13,11 +13,11 @@
   margin-right: 30px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     flex-basis: calc(100% / 3 - 30px);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desk {
     margin-bottom: 0;
   }
 }

@@ -71,7 +71,7 @@
   color: var(--primery-bgr-color);
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
+  @include desk {
     font-size: 44px;
     line-height: 1.36;
   }

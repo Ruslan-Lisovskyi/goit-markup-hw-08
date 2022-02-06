@@ -78,12 +78,6 @@ body.menu-open {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -518,7 +512,7 @@ body.menu-open {
   top: 0;
   left: 0;
   width: 100vw;
-  max-width: 767px;
+  max-width: 100%;
   height: 100vh;
   max-height: 796px;
   z-index: 1;
@@ -595,6 +589,10 @@ body.menu-open {
 
 .mob-menu__social__link--border-none {
   border: none;
+}
+
+.mob-menu__social__link--no-padding-left {
+  padding: 0;
 }
 
 .nav {
