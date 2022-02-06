@@ -548,6 +548,9 @@ body.menu-open {
   top: 3vh;
   background-color: inherit;
   border: none;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__close:hover, .menu__close:focus {
@@ -564,6 +567,9 @@ body.menu-open {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-menu__link:hover, .mob-menu__link:focus {
@@ -588,6 +594,9 @@ body.menu-open {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--primery-text-color);
+  transition-property: color, font-weight, font-size, letter-spacing;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth__link:hover, .auth__link:focus {
