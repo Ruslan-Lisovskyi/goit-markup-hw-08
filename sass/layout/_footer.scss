@@ -70,6 +70,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
+  @include desk {
+    text-align: left;
+  }
 }
 
 .page-footer__social-container {
