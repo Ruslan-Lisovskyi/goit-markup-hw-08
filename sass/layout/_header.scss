@@ -109,7 +109,15 @@
   }
 }
 
-.auth__link {
+.auth__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--btn-color);
+}
+
+.auth__mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
@@ -118,14 +126,6 @@
   transition-property: color, font-weight, font-size, letter-spacing;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: var(--btn-color);
-  }
 }
 
 .mob-menu__social {
