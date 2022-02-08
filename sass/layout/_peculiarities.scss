@@ -18,6 +18,7 @@
   }
 
   @include desk {
+    flex-wrap: nowrap;
     margin-bottom: 0;
     margin-right: 0;
   }
@@ -31,7 +32,7 @@
   }
 
   @include desk {
-    flex-basis: calc(100% / 4 - 30px);
+    // flex-basis: calc(100% / 4 - 30px);
     margin-right: 0;
     margin-bottom: 0;
   }
