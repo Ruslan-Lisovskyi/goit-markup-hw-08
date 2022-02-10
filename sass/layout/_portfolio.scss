@@ -69,6 +69,15 @@
   padding: 20px 24px;
 }
 
+.portfolio__tamp--up-height {
+  @include tab {
+    height: 146px;
+  }
+  @include desk {
+    height: auto;
+  }
+}
+
 .portfolio__title {
   font-weight: 700;
   font-size: 18px;
